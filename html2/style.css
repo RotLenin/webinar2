@@ -4,14 +4,12 @@ body{
     position: relative;
     min-height: 100vh;
     top: 0px;
-    background-image: url(img/rawImage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .header{
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 .nav-options{
@@ -99,6 +97,113 @@ body{
 
 .content{
 
+}
+
+.single-banner{
+    position: relative;
+    height: 100vh;
+    background-image: url(img/rawImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explore{
+    width: 100%;
+}
+
+.explore-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.explore-card{
+    width: 25%;
+}
+
+.explore-card__img{
+    width: 100%;
+}
+
+.explore-card__title{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(232, 230, 227);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    line-height: 1.5;
+}
+
+.single-banner-footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #000;
+    color: rgb(232, 230, 227);
+}
+
+.single-banner-footer__title{
+
+}
+
+.single-banner-footer__title h3,
+.single-banner-footer__title p,
+.single-banner-footer__link h3,
+.single-banner-footer__link h3,
+.single-banner-footer__link p{
+    box-sizing: border-box;
+    color: rgb(226, 223, 219);
+    text-shadow: rgb(0 0 0) 2px 2px;
+}
+
+.single-banner-footer__title h3{
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+.single-banner-footer__title p{
+    font-size: 1em;
+}
+
+.single-banner-footer__title,
+.single-banner-footer__link,
+.single-banner-footer__subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.single-banner-footer__link{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.single-banner-footer__link h3{
+    font-size: 1.7em;
+}
+
+.single-banner-footer__link .icon{
+    margin-top: 15px;
+    font-size: 2em;
+}
+
+.single-banner-footer__subtitle h3{
+    margin-top: 15px;
+}
+
+.single-banner-footer__subtitle p{
+    font-size: 1.3em;
 }
 
 .content-search{
